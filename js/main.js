@@ -66,3 +66,16 @@ fetch("https://jsonplaceholder.typicode.com/posts/1",{
 })
 
 
+
+const btnFetch=document.querySelector('.btnFetch');
+
+btnFetch.addEventListener('click',()=>{
+    fetch('https://blinky.esdlyon.dev')
+        .then(response => response.json())
+        .then(data => console.log(data))
+
+
+
+
+})
+
