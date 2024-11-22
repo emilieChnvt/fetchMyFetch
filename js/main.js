@@ -26,3 +26,19 @@ fetch('https://jsonplaceholder.typicode.com/posts/',{
     .then(response => response.json())
     .then(data => console.log(data))
 
+//PUT
+
+fetch('https://jsonplaceholder.typicode.com/posts/1',{
+    method: 'PUT',
+    headers: lesHeaders,
+    body: JSON.stringify({
+        id:1,
+        tittle:'foo',
+        body:'bar',
+        userId:1
+
+    }),
+
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
