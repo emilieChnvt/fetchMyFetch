@@ -10,7 +10,7 @@ let lesHeaders={
 
 // GET
 
-fetch('https://jsonplaceholder.typicode.com/posts/1')
+fetch('https://jsonplaceholder.typicode.com/posts/')
     .then(response => response.json())
     .then(data => console.log(data))
 
@@ -56,3 +56,13 @@ fetch('https://jsonplaceholder.typicode.com/posts/1',{
 })
     .then(response => response.json())
     .then(data => console.log(data))
+
+
+
+//DELETE
+
+fetch("https://jsonplaceholder.typicode.com/posts/1",{
+    method: 'DELETE',
+})
+
+
