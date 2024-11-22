@@ -42,3 +42,17 @@ fetch('https://jsonplaceholder.typicode.com/posts/1',{
 })
     .then(response => response.json())
     .then(data => console.log(data))
+
+//PATCH
+
+fetch('https://jsonplaceholder.typicode.com/posts/1',{
+    method: 'PATCH',
+    headers: lesHeaders,
+    body: JSON.stringify({
+        title:'fo'
+
+    }),
+
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
