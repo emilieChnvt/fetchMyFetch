@@ -1,1 +1,1 @@
-This is a repository where I tried GET POSTN PATCH PUT DELETE method
+This is a repository where I tried GET POST PATCH PUT DELETE method
